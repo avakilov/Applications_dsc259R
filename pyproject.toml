@@ -1,0 +1,48 @@
+[project]
+name = "dsc259r"
+version = "0.1.0"
+description = "DSC 259R Course Environment"
+requires-python = "==3.12.*"
+dependencies = [
+    "PyYAML==6.0.2",
+    "SQLAlchemy==2.0.35",
+    "beautifulsoup4==4.12.3",
+    "certifi==2024.8.30",
+    "click>=8.2.1",
+    "docopt==0.6.2",
+    "geopandas==1.0.1",
+    "ipython==8.37.0",
+    "ipywidgets==8.1.5",
+    "jupyterlab-server==2.27.3",
+    "jupyterlab-widgets==3.0.13",
+    "jupyterlab==4.2.5",
+    "lxml==6.0.2",
+    "matplotlib-inline==0.1.7",
+    "matplotlib==3.9.2",
+    "mistune>=2.0.3,<3",
+    "nbclassic==1.1.0",
+    "nbconvert==7.16.4",
+    "notebook==7.2.2",
+    "numpy==2.1.1",
+    "pandas==2.2.3",
+    "plotly==5.24.1",
+    "pyOpenSSL==24.2.1",
+    "pydantic==2.9.2",
+    "pyogrio==0.9.0",
+    "pytest-xdist==3.6.1",
+    "requests-oauthlib==2.0.0",
+    "requests==2.32.3",
+    "scikit-learn==1.5.2",
+    "seaborn==0.13.2",
+    "shapely==2.0.6",
+    "statsmodels==0.14.3",
+    "tqdm==4.66.5",
+    "urllib3==2.2.3",
+    # Scipy version 1.16 breaks dependencies, so we have to use 1.15
+    "scipy==1.15",
+    "otter-grader==6.1.6",
+    "pandas-tutor==2.1.0.dev1",
+]
+
+[tool.pyright]
+exclude = ["**/*ipynb"]
